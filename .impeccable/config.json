@@ -20,6 +20,36 @@
         ],
         "createdAt": "2026-10-21T14:05:44.768Z",
         "reason": "Claude: false positive, detector counts only fixed px (11-20px small text); headings are fluid clamp() sizes 30-80px (h1 clamp(42px,12vw,80px), h2 clamp(30px,7.6vw,48px)), so steps are well over 1.25"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-21T14:09:35.234Z",
+        "reason": "Claude: focus-ring corner radius on :focus-visible, a browser-surface detail, not a component shape"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(10,22,38,.88)",
+        "createdAt": "2026-10-21T14:09:35.294Z",
+        "reason": "Claude: photo-card bottom scrim (deep navy at 88%) so white titles stay readable over generated photos"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#1877f2",
+        "createdAt": "2026-10-21T14:09:35.355Z",
+        "reason": "Claude: Facebook's own brand blue on the Facebook logo glyph only"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "23px",
+        "createdAt": "2026-10-21T14:09:35.415Z",
+        "reason": "Claude: header wordmark size at 760px+, a logo lockup, not a text step"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-10-21T14:09:35.474Z",
+        "reason": "Claude: how-it-works step titles at 1024px+, the desktop end of the documented 20-24px title range"
       }
     ]
   }
