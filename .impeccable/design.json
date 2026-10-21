@@ -1,0 +1,523 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T14:07:56.925471+00:00",
+  "title": "Design System: PL Siding and Eaves",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "#f4f6fb",
+        "oklch": "oklch(97.3% 0.007 268.5)",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#242529",
+          "#404246",
+          "#5f6165",
+          "#808287",
+          "#a3a5aa",
+          "#c7c9ce",
+          "#eceef3"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "White Card",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field Mist",
+        "canonical": "#e6ecf5",
+        "oklch": "oklch(94.1% 0.014 258.3)",
+        "tonalRamp": [
+          "#080b11",
+          "#21252c",
+          "#3e4249",
+          "#5c6269",
+          "#7d838b",
+          "#a0a5ae",
+          "#c4cad2",
+          "#e9eff8"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "canonical": "#12253d",
+        "oklch": "oklch(26.2% 0.052 255.1)",
+        "tonalRamp": [
+          "#000b1e",
+          "#13263e",
+          "#2f435d",
+          "#4d637f",
+          "#6e84a1",
+          "#90a7c6",
+          "#b3cbeb",
+          "#e5f0fe"
+        ]
+      },
+      "body": {
+        "role": "neutral",
+        "displayName": "Body Slate",
+        "canonical": "#2a3a4c",
+        "oklch": "oklch(34.3% 0.038 251.9)",
+        "tonalRamp": [
+          "#010c1b",
+          "#172637",
+          "#334356",
+          "#526377",
+          "#728499",
+          "#94a7bd",
+          "#b8cbe2",
+          "#e4f0fe"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft Slate",
+        "canonical": "#4a5868",
+        "oklch": "oklch(45.5% 0.032 251.9)",
+        "tonalRamp": [
+          "#030c18",
+          "#1a2634",
+          "#364353",
+          "#546373",
+          "#758495",
+          "#97a7b9",
+          "#bbcbde",
+          "#e4f0fe"
+        ]
+      },
+      "navy": {
+        "role": "secondary",
+        "displayName": "Logo Navy",
+        "canonical": "#1d3b60",
+        "oklch": "oklch(34.9% 0.074 254.8)",
+        "tonalRamp": [
+          "#000b1f",
+          "#072548",
+          "#254369",
+          "#43638b",
+          "#6485af",
+          "#86a8d3",
+          "#a9ccf9",
+          "#e4f0fe"
+        ]
+      },
+      "deep": {
+        "role": "secondary",
+        "displayName": "Deep Winter Navy",
+        "canonical": "#10223a",
+        "oklch": "oklch(25.0% 0.052 256.2)",
+        "tonalRamp": [
+          "#000a20",
+          "#13253e",
+          "#30435d",
+          "#4e637f",
+          "#6e84a2",
+          "#90a7c6",
+          "#b4cbeb",
+          "#e5effe"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "Frost",
+        "canonical": "#f4f7fb",
+        "oklch": "oklch(97.5% 0.006 255.5)",
+        "tonalRamp": [
+          "#090b0e",
+          "#232528",
+          "#404245",
+          "#5f6165",
+          "#808286",
+          "#a2a5a9",
+          "#c6c9cd",
+          "#eceff3"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "Soft Frost",
+        "canonical": "#c9d6e6",
+        "oklch": "oklch(87.1% 0.026 253.6)",
+        "tonalRamp": [
+          "#040c16",
+          "#1c2632",
+          "#384350",
+          "#576270",
+          "#788492",
+          "#9aa6b6",
+          "#becbda",
+          "#e4f0ff"
+        ]
+      },
+      "amber": {
+        "role": "primary",
+        "displayName": "Fall-Maple Amber",
+        "canonical": "#f2a33a",
+        "oklch": "oklch(77.6% 0.148 69.4)",
+        "tonalRamp": [
+          "#140800",
+          "#371f00",
+          "#5c3906",
+          "#845616",
+          "#b07421",
+          "#df9221",
+          "#fcbb6f",
+          "#feebd7"
+        ]
+      },
+      "amber-2": {
+        "role": "primary",
+        "displayName": "Light Maple",
+        "canonical": "#f7b95e",
+        "oklch": "oklch(82.6% 0.129 74.8)",
+        "tonalRamp": [
+          "#130900",
+          "#352000",
+          "#593b06",
+          "#805816",
+          "#ab7721",
+          "#d4983a",
+          "#fabc61",
+          "#fdecd4"
+        ]
+      },
+      "amber-ink": {
+        "role": "primary",
+        "displayName": "Maple Ink",
+        "canonical": "#8a4a00",
+        "oklch": "oklch(47.7% 0.113 59.1)",
+        "tonalRamp": [
+          "#160700",
+          "#3a1d02",
+          "#61350a",
+          "#8f4f09",
+          "#b47035",
+          "#d99359",
+          "#fbb985",
+          "#feeadc"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus Blue",
+        "canonical": "#1f5fa8",
+        "oklch": "oklch(48.5% 0.133 254.6)",
+        "tonalRamp": [
+          "#000b1e",
+          "#04254a",
+          "#03417f",
+          "#2261aa",
+          "#4584d0",
+          "#68a8f7",
+          "#a7ccfc",
+          "#e5f0fe"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error Red",
+        "canonical": "#b3261e",
+        "oklch": "oklch(50.1% 0.178 28.7)",
+        "tonalRamp": [
+          "#1f0000",
+          "#4c0202",
+          "#7d0e0a",
+          "#b0221b",
+          "#d84c3f",
+          "#f97969",
+          "#fcb5aa",
+          "#fee9e5"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(18,37,61,.12)",
+        "tonalRamp": [
+          "#000b1e",
+          "#13263e",
+          "#2f435d",
+          "#4d637f",
+          "#6e84a1",
+          "#90a7c6",
+          "#b3cbeb",
+          "#e5f0fe"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The hero H1 only, white, max 12ch; bounces in letter by letter."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Every section H2, balanced wrapping."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Claim rows, step titles, card titles, the offer line, the Facebook row, form labels."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text everywhere; inputs at 16px so iOS doesn't zoom."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Hero promise (32-40ch) and section ledes (38ch)."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Eyebrow pills."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Pill buttons and the header phone number family."
+      }
+    },
+    "shadows": [
+      {
+        "name": "float-lift",
+        "value": "0 10px 28px rgba(8,22,40,.3)",
+        "purpose": "The floating text circle only; everything else is flat."
+      }
+    ],
+    "textures": [
+      {
+        "name": "band-lines",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Faint diagonal lines on the hero, the deep navy band and the footer."
+      }
+    ],
+    "motion": [
+      {
+        "name": "letter-in",
+        "value": "1s cubic-bezier(.34,1.56,.64,1), delay calc(var(--i) * 20ms), from opacity 0 translateX(50px)",
+        "purpose": "Hero H1 letter bounce-in only; skipped without JS and under reduced motion."
+      },
+      {
+        "name": "rise",
+        "value": "opacity .4s ease-out, transform .4s ease-out, from translateY(12px)",
+        "purpose": "One fade-up for elements that start below the first screen."
+      },
+      {
+        "name": "float-in",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1), from translateY(120px)",
+        "purpose": "Floating text circle slides in after the hero and out while the form is on screen."
+      },
+      {
+        "name": "state",
+        "value": ".15s-.2s background-color, color, border-color",
+        "purpose": "Hover and focus colour changes."
+      },
+      {
+        "name": "press",
+        "value": "transform .12s, scale(.98)",
+        "purpose": "Button press."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "max-width: 380px"
+      },
+      {
+        "name": "tablet",
+        "value": "min-width: 760px"
+      },
+      {
+        "name": "desktop",
+        "value": "min-width: 1024px"
+      }
+    ],
+    "config": [
+      {
+        "name": "FLOAT",
+        "value": "true",
+        "purpose": "The floating text circle; false removes it."
+      },
+      {
+        "name": "SMS",
+        "value": "+15199961924",
+        "purpose": "Where the quote form and text links send."
+      },
+      {
+        "name": "TEXTS",
+        "value": "true",
+        "purpose": "false turns text links into call links and removes the hero's Text us button."
+      },
+      {
+        "name": "PROMO_END",
+        "value": "2026-11-30",
+        "purpose": "After this day the fall offer card hides and the hero eyebrow becomes 'Proudly Canadian'."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Amber pill for the main action: Get a quote, Text this to us.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Get a quote</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 \"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn-primary{background:#f2a33a;color:#12253d;border-color:#f2a33a}.ds-btn-primary:hover{background:#f7b95e;border-color:#f7b95e}.ds-btn-primary:focus-visible{outline:3px solid #1f5fa8;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Outlined secondary pill on navy: Text us.",
+      "html": "<div style=\"background:#1d3b60;padding:24px\"><a class=\"ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Text us</a></div>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 \"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;text-decoration:none;background:transparent;color:#f4f7fb;border:2px solid rgba(244,247,251,.7);transition:background-color .2s,border-color .2s}.ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}.ds-btn-ghost:focus-visible{outline:3px solid #f2a33a;outline-offset:3px}"
+    },
+    {
+      "name": "Eyebrow Pill",
+      "kind": "chip",
+      "refersTo": "eyebrow",
+      "description": "Deliberate house-style label above the hero H1 and a few section heads; never a button.",
+      "html": "<span class=\"ds-eyebrow\">Fall cleaning</span>",
+      "css": ".ds-eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;letter-spacing:.02em;color:#12253d;background:rgba(18,37,61,.06);padding:9px 14px;border-radius:999px}.ds-eyebrow::before{content:\"\";width:7px;height:7px;border-radius:50%;background:#f2a33a}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Field Mist fill, no visible border until hover, focus or error.",
+      "html": "<label class=\"ds-label\" for=\"ds-where\">Your town or street</label><input class=\"ds-input\" id=\"ds-where\" type=\"text\" placeholder=\"e.g. Tecumseh\">",
+      "css": ".ds-label{display:block;margin-bottom:8px;font:400 18px/1.2 \"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;color:#12253d}.ds-input{width:100%;font:16px/1.4 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;color:#12253d;background:#e6ecf5;border:2px solid transparent;border-radius:10px;padding:13px 14px;min-height:52px;caret-color:#1f5fa8;transition:border-color .15s}.ds-input::placeholder{color:#55616f}.ds-input:hover,.ds-input:focus{outline:none;border-color:#1f5fa8}"
+    },
+    {
+      "name": "Job Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Radio chip for picking the job; selected fills Night Ink.",
+      "html": "<div class=\"ds-chips\"><input type=\"radio\" name=\"ds-job\" id=\"ds-j1\" checked><label for=\"ds-j1\">Eavestrough cleaning</label><input type=\"radio\" name=\"ds-job\" id=\"ds-j2\"><label for=\"ds-j2\">Gutter guards</label></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px}.ds-chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}.ds-chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:#e6ecf5;border:2px solid transparent;font:16px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;color:#12253d;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chips label:hover{border-color:#1f5fa8}.ds-chips input:focus-visible+label{outline:3px solid #1f5fa8;outline-offset:2px}.ds-chips input:checked+label{background:#12253d;color:#fff}"
+    },
+    {
+      "name": "Service Photo Card",
+      "kind": "card",
+      "refersTo": "photo-card",
+      "description": "4:5 photo with bottom gradient, white title and arrow circle that fills amber on hover. Images are AI-generated service illustrations.",
+      "html": "<a class=\"ds-card\" href=\"#\"><span class=\"ds-card-img\"></span><span class=\"ds-card-t\">Gutter guards<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></span></a>",
+      "css": ".ds-card{position:relative;display:block;width:220px;border-radius:20px;overflow:hidden;aspect-ratio:4/5;background:#10223a;text-decoration:none;color:#fff}.ds-card-img{position:absolute;inset:0;background:linear-gradient(160deg,#4a5868,#1d3b60)}.ds-card::after{content:\"\";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,22,38,.88) 0,rgba(10,22,38,.55) 32%,rgba(10,22,38,0) 58%)}.ds-card-t{position:absolute;z-index:1;left:14px;right:14px;bottom:14px;display:flex;align-items:flex-end;justify-content:space-between;gap:8px;font:400 20px/1.1 \"Cal Sans\",\"Avenir Next\",system-ui,sans-serif}.ds-arrow{width:36px;height:36px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.16);color:#fff;transition:background-color .2s,color .2s}.ds-card:hover .ds-arrow,.ds-card:focus-visible .ds-arrow{background:#f2a33a;color:#12253d}.ds-card:focus-visible{outline:none}.ds-card:focus-visible .ds-arrow{outline:3px solid #f2a33a;outline-offset:3px}"
+    },
+    {
+      "name": "Fall Offer Card",
+      "kind": "card",
+      "refersTo": "offer-card",
+      "description": "Amber 24px card for the seasonal offer; hides after CONFIG.PROMO_END.",
+      "html": "<div class=\"ds-special\"><b>Save $50 on fall service packages.</b><p>Ask about it when you text or call.</p></div>",
+      "css": ".ds-special{background:#f2a33a;color:#12253d;border-radius:24px;padding:24px;display:grid;gap:8px;max-width:520px}.ds-special b{font:400 26px/1.1 \"Cal Sans\",\"Avenir Next\",system-ui,sans-serif}.ds-special p{margin:0;font:16px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Slim paper header: logo and wordmark left, tap-to-call number right; no menu.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-nm\"><b>PL Siding</b><span>and Eaves</span></span></a><a class=\"ds-tel\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>(519) 996-1924</a></header>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 20px;background:#f4f6fb;color:#12253d}.ds-brand{display:flex;align-items:center;min-height:44px;text-decoration:none;color:inherit}.ds-nm{display:flex;flex-direction:column;line-height:1}.ds-nm b{font:400 20px/1 \"Cal Sans\",\"Avenir Next\",system-ui,sans-serif;letter-spacing:.01em}.ds-nm span{font:600 11px/1 -apple-system,BlinkMacSystemFont,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#4a5868;margin-top:5px}.ds-tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;font:400 17px/1 \"Cal Sans\",\"Avenir Next\",system-ui,sans-serif;text-decoration:none;color:inherit;white-space:nowrap}.ds-tel svg{color:#8a4a00}.ds-tel:hover{color:#8a4a00}.ds-tel:focus-visible{outline:3px solid #1f5fa8;outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Floating Text Circle",
+      "kind": "custom",
+      "refersTo": "floating-text-circle",
+      "description": "One 60px amber circle that opens sms:, shown after the hero and hidden while the form is on screen.",
+      "html": "<a class=\"ds-float\" href=\"#\" aria-label=\"Text PL Siding and Eaves\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:#f2a33a;color:#12253d;box-shadow:0 10px 28px rgba(8,22,40,.3);transition:transform .35s cubic-bezier(.2,.8,.2,1)}.ds-float:focus-visible{outline:3px solid #1f5fa8;outline-offset:3px}"
+    },
+    {
+      "name": "Numbered Step",
+      "kind": "custom",
+      "refersTo": "step",
+      "description": "Amber counter disc beside a Cal Sans title on the textured deep navy band.",
+      "html": "<div class=\"ds-band\"><ol class=\"ds-steps\"><li><div><b>Text or call us.</b><span>Tell us what your eaves or siding need.</span></div></li><li><div><b>Get your price.</b><span>You know the cost before we start.</span></div></li></ol></div>",
+      "css": ".ds-band{background-color:#10223a;background-image:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);color:#c9d6e6;padding:32px 20px;font:16px/1.7 -apple-system,BlinkMacSystemFont,sans-serif}.ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:24px;counter-reset:s}.ds-steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}.ds-steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#f2a33a;color:#12253d;font:400 20px/1 \"Cal Sans\",\"Avenir Next\",system-ui,sans-serif}.ds-steps b{display:block;font:400 21px/1.2 \"Cal Sans\",\"Avenir Next\",system-ui,sans-serif;color:#f4f7fb;margin-top:4px}.ds-steps span{display:block;margin-top:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Fall in Essex County",
+    "overview": "The site is an instance of Ellie's calm band style, coloured from the client's logo: a black maple leaf behind a house. The logo's black becomes two navies, and fall-maple amber is the single warm accent. The page is a stack of full-bleed bands that alternate light and dark so each new section is obvious on a phone. Shapes are soft and borderless, type is one rounded display webfont (Cal Sans) over a quiet system body, and motion is limited to three deliberate moves: the hero H1's letter bounce-in, one 12px fade-up for content below the first screen, and a floating text circle that slides in once the hero is gone.\n\nDensity is low and phone-first. Every band has one job (claim, what a fall cleaning includes, the four services, how it works, the quote form, the closing number), and contact is always one tap away through the header number, the hero buttons, the floating circle and the form. There are no client job photos; the hero is the plain textured navy band, and the four service cards carry AI-generated illustrations of the services (gpt-image-1, provenance in `img/*.webp.json`), never presented as PL Siding and Eaves jobs.",
+    "keyCharacteristics": [
+      "Paper, navy and deep navy bands, with one amber accent used as a fill.",
+      "A faint 135deg line texture on the hero, the deep navy band and the footer.",
+      "Cal Sans at weight 400 for every heading, button, label and phone number; system stack for running text.",
+      "Small eyebrow pills with an amber dot above the hero headline and a few section headings (deliberate house style).",
+      "Hero H1 bounces in letter by letter; nothing else on the page does.",
+      "One floating 60px text circle, never a bottom bar.",
+      "Behaviour switches live in a `CONFIG` object (`FLOAT`, `SMS`, `TEXTS`, `PROMO_END`)."
+    ],
+    "rules": [
+      {
+        "name": "The Fill-Only Amber Rule",
+        "body": "Amber is a fill. Text on amber is Night Ink; amber as text on paper is always Maple Ink. White on amber and amber on paper are never used.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Focus Colours Rule",
+        "body": "Focus rings are Focus Blue on light grounds and amber inside the hero, navy bands, deep bands and footer.",
+        "section": "colors"
+      },
+      {
+        "name": "The Accent Phrase Rule",
+        "body": "A heading's last phrase may carry the accent (`.accent`): amber on dark bands, Maple Ink on paper. One phrase per heading.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Display Face Rule",
+        "body": "Cal Sans at 400 for display roles, the system stack for everything else; never a second body font, never a heavier Cal Sans.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hero-Only Bounce Rule",
+        "body": "Only the hero H1 animates letter by letter; no other heading gets a letter reveal.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Bands Rule",
+        "body": "Nothing on the page casts a shadow except the floating text circle.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Faint Texture Rule",
+        "body": "Dark-band texture is `repeating-linear-gradient(135deg, transparent 0 22px, rgba(255,255,255,.035) 22px 23px)`, at about 4% white or fainter so it never reads as lines through text. It goes on the hero, the deep navy band and the footer; the mid-navy content bands stay plain.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep amber a fill and use Maple Ink whenever the accent must be text or a line icon on paper.",
+      "**Do** alternate full-bleed bands (paper, navy, paper, deep navy with texture) so every section change is obvious.",
+      "**Do** keep the line texture at `rgba(255,255,255,.035)` or fainter and only on the hero, deep navy band and footer.",
+      "**Do** set every heading, button, label and phone number in Cal Sans 400, and running text in the system stack at 16px / 1.7.",
+      "**Do** keep eyebrow pills quiet (14px, amber dot, tint fill) and use them above the hero H1 and only a few section heads.",
+      "**Do** keep tap targets at 44px or more and inputs at 16px or larger.",
+      "**Do** put behaviour switches and contact details in `CONFIG`, and keep every motion with a reduced-motion and no-JS fallback that shows content at rest.",
+      "**Do** label generated imagery as service illustrations and keep its provenance JSON beside each file."
+    ],
+    "donts": [
+      "**Don't** put white text on amber or amber text on paper.",
+      "**Don't** add shadows to cards, buttons or the header; the floating circle is the only lifted element.",
+      "**Don't** give eyebrows an arrow, hover state, shadow or full amber fill, or mark them up as headings.",
+      "**Don't** animate any heading other than the hero H1 letter by letter.",
+      "**Don't** replace the floating circle with a bottom bar, or show it while the quote form is in view.",
+      "**Don't** add a Call button to the hero; the header number covers calling.",
+      "**Don't** present the generated service photos as PL Siding and Eaves jobs, or add captions, reviews, prices or credentials the client hasn't given.",
+      "**Don't** fill fields with Cool Paper on the white card; fields use Field Mist."
+    ]
+  }
+}
