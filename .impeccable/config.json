@@ -11,6 +11,15 @@
         ],
         "createdAt": "2026-10-21T14:00:59.494Z",
         "reason": "pitch-site house style (calm-photo-style.md item 2, Ellie's 2026-10-19 choice): faint diagonal band texture is required on deep bands"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T14:05:44.768Z",
+        "reason": "Claude: false positive, detector counts only fixed px (11-20px small text); headings are fluid clamp() sizes 30-80px (h1 clamp(42px,12vw,80px), h2 clamp(30px,7.6vw,48px)), so steps are well over 1.25"
       }
     ]
   }
