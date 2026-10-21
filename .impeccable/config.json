@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T14:00:59.494Z",
+        "reason": "pitch-site house style (calm-photo-style.md item 2, Ellie's 2026-10-19 choice): faint diagonal band texture is required on deep bands"
+      }
+    ]
+  }
+}
