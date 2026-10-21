@@ -86,7 +86,7 @@ section{padding:64px 0}
 .top{background:var(--paper);color:var(--ink)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
 .brand{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none}
-.brand svg{width:38px;height:31px;flex:none;color:var(--ink)}
+.brand svg{width:38px;height:31px;flex:none;color:var(--ink);--leaf:var(--amber)}
 .brand .nm{display:flex;flex-direction:column;line-height:1}
 .brand b{font:400 20px/1 var(--display);letter-spacing:.01em}
 .brand span span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
@@ -112,7 +112,7 @@ section{padding:64px 0}
 .claims li+li{border-top:1px solid var(--line)}
 .claims svg{width:40px;height:40px;flex:none;color:var(--amber-ink)}
 .special{margin-top:32px;background:var(--amber);color:var(--ink);border-radius:var(--r-card);padding:24px;display:grid;gap:8px;max-width:520px}
-.special b{font:400 clamp(24px,6.6vw,30px)/1.1 var(--display)}
+.special b{font:400 clamp(22px,5.6vw,28px)/1.1 var(--display)}
 .special p{font-size:16px;line-height:1.5}
 
 /* ---------- Services: photo cards ---------- */
@@ -120,7 +120,7 @@ section{padding:64px 0}
 .card{position:relative;display:block;border-radius:20px;overflow:hidden;aspect-ratio:4/5;background:var(--deep);text-decoration:none;color:#fff}
 .card img{width:100%;height:100%;object-fit:cover}
 .card::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,22,38,.88) 0,rgba(10,22,38,.55) 32%,rgba(10,22,38,0) 58%)}
-.card .t{position:absolute;z-index:1;left:14px;right:14px;bottom:14px;display:flex;align-items:flex-end;justify-content:space-between;gap:8px;font:400 clamp(17px,4.6vw,22px)/1.1 var(--display)}
+.card .t{position:absolute;z-index:1;left:14px;right:14px;bottom:14px;display:flex;align-items:flex-end;justify-content:space-between;gap:8px;font:400 clamp(16px,4.4vw,22px)/1.1 var(--display)}
 .card .arrow{width:36px;height:36px;background:rgba(255,255,255,.16);color:#fff}
 .card:hover,.card:focus-visible{outline:none}
 .card:focus-visible .arrow{background:var(--amber);color:var(--ink);outline:3px solid var(--amber);outline-offset:3px}
@@ -163,8 +163,10 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 form .btn-primary{width:100%}
 form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 .after{font-size:16px;color:var(--soft)}
+.after a{white-space:nowrap;color:var(--ink);display:inline-block;padding:11px 0;margin:-11px 0}
 .sent{color:var(--ink);font-weight:600}
 .sent a{white-space:nowrap;display:inline-block;padding:11px 0;margin:-11px 0}
+.copy{font:inherit;color:inherit;background:none;border:0;padding:11px 0;margin:-11px 0;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 @media (max-width:380px){.chips label{padding:0 14px}}
 
 /* ---------- Close ---------- */
@@ -176,12 +178,12 @@ form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2p
 /* ---------- Footer ---------- */
 footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
 footer .wrap{display:grid;gap:14px}
-.nw{white-space:nowrap}
 footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
 footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
 
 /* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
-.float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);box-shadow:0 10px 28px rgba(8,22,40,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.float{display:none;position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);box-shadow:0 10px 28px rgba(8,22,40,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.js .float{display:grid}
 .float.on{transform:none}
 .float svg{width:26px;height:26px}
 .float:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
@@ -202,9 +204,9 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .promise{max-width:40ch}
   .actions{grid-auto-flow:column;justify-content:start;width:auto}
   .actions .btn{min-width:220px}
-  .cards{grid-template-columns:repeat(4,1fr);gap:16px}
 }
 @media (min-width:1024px){
+  .cards{grid-template-columns:repeat(4,1fr);gap:16px}
   .hero-mark{display:block;position:absolute;right:max(40px,calc(50% - 560px));bottom:-40px;width:440px;height:360px;color:rgba(255,255,255,.06)}
   .split{display:grid;grid-template-columns:1fr 1fr;column-gap:64px;align-items:start}
   .split .claims{margin-top:0}
@@ -224,7 +226,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
 input[type=text]:hover,textarea:hover{border-color:var(--focus)}
 .chips label:hover{border-color:var(--focus)}
 form .btn-primary:hover{outline:2px solid var(--focus);outline-offset:2px}
-.sent a:hover{color:var(--focus)}
+.after a:hover,.copy:hover{color:var(--focus)}
 .bigtel:hover{color:var(--amber)}
 footer a:hover{color:var(--amber)}
 }
@@ -250,7 +252,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <!-- the PL Siding and Eaves mark, traced from their logo: three maple-leaf points behind a house -->
-  <symbol id="i-logo" viewBox="360 300 1095 900"><path fill="currentColor" fill-rule="evenodd" d="M907 312L998 545 1105 522 1046 882 907 788 768 882 708 522 818 545ZM608 660L603 795 373 740 490 935 412 975 520 1050 752 893ZM1206 660L1211 795 1441 740 1324 935 1402 975 1294 1050 1062 893ZM907 848L1247 1080 1175 1080 1175 1190 640 1190 640 1080 565 1080ZM845 1020h55v50h-55ZM915 1020h55v50h-55ZM845 1090h55v50h-55ZM915 1090h55v50h-55Z"/></symbol>
+  <symbol id="i-logo" viewBox="360 300 1095 900"><path fill="var(--leaf,currentColor)" d="M907 312L998 545 1105 522 1046 882 907 788 768 882 708 522 818 545ZM608 660L603 795 373 740 490 935 412 975 520 1050 752 893ZM1206 660L1211 795 1441 740 1324 935 1402 975 1294 1050 1062 893Z"/><path fill="currentColor" fill-rule="evenodd" d="M907 848L1247 1080 1175 1080 1175 1190 640 1190 640 1080 565 1080ZM845 1020h55v50h-55ZM915 1020h55v50h-55ZM845 1090h55v50h-55ZM915 1090h55v50h-55Z"/></symbol>
 </svg>
 <header class="top">
   <div class="wrap">
@@ -263,7 +265,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="hero" id="hero" aria-labelledby="h1">
   <svg class="hero-mark" aria-hidden="true"><use href="#i-logo"/></svg>
   <div class="wrap hero-copy">
-    <span class="eyebrow">Proudly Canadian</span>
+    <span class="eyebrow" id="heroEyebrow">Save $50 on fall service</span>
     <h1 id="h1">Get your Windsor home <span class="accent">ready for winter.</span></h1>
     <p class="promise">We clean your eavestroughs by hand, and we don't leave until your yard is tidy again.</p>
     <div class="actions">
@@ -282,14 +284,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </div>
       <div class="special" id="special">
         <b>Save $50 on fall service packages.</b>
-        <p>Mention this website when you text or call.</p>
+        <p>Ask about it when you text or call.</p>
       </div>
     </div>
     <ul class="claims">
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 5c7 5 10 11 8 18-1.6 5.5-6 9-8 12-2-3-6.4-6.5-8-12C10 16 13 10 20 5z"/><path d="M20 12v23"/></svg>Every eavestrough cleaned by hand</li>
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h16v8h-8v20H8z"/><path d="M28 22c2 3 4 5.3 4 7.5a4 4 0 0 1-8 0c0-2.2 2-4.5 4-7.5z"/></svg>Downspouts flushed and tested</li>
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="17" cy="17" r="10"/><path d="M24.5 24.5L34 34"/></svg>Eavestroughs inspected</li>
-      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 35h28"/><path d="M14 35l3-13h6l3 13"/><path d="M20 22V5"/><path d="M11 35l2-4M29 35l-2-4"/></svg>Your yard cleaned up after</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4v17"/><path d="M20 21L9 35M20 21l-6 14M20 21v14M20 21l6 14M20 21l11 14"/><path d="M12 31h16"/></svg>Your yard cleaned up after</li>
     </ul>
   </div>
 </section>
@@ -301,13 +303,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <h2 id="h-services">Siding and eaves, <span class="accent">start to finish.</span></h2>
     </div>
     <ul class="cards">
-      <li class="rise"><a class="card" href="#ask" data-job="Eavestrough cleaning"><img src="img/cleaning.webp" width="800" height="1000" loading="lazy" decoding="async" alt="An eavestrough half cleared of wet leaves"><span class="t">Eavestrough cleaning<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a></li>
-      <li class="rise"><a class="card" href="#ask" data-job="Gutter guards"><img src="img/guard.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Maple leaves resting on a mesh gutter guard"><span class="t">Gutter guards<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a></li>
-      <li class="rise"><a class="card" href="#ask" data-job="Seamless eavestroughs"><img src="img/eaves.webp" width="800" height="1000" loading="lazy" decoding="async" alt="A white seamless eavestrough and downspout on a brick bungalow"><span class="t">Seamless eavestroughs<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a></li>
-      <li class="rise"><a class="card" href="#ask" data-job="Siding repair"><img src="img/siding.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Grey vinyl siding on the side of a two-storey house"><span class="t">Siding repair<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a></li>
+      <li class="rise"><a class="card" href="#ask" data-job="Eavestrough cleaning" aria-label="Get a quote for eavestrough cleaning"><img src="img/cleaning.webp" srcset="img/cleaning-400.webp 400w, img/cleaning.webp 800w" sizes="(min-width:1024px) 270px, 50vw" width="800" height="1000" loading="lazy" decoding="async" alt="An eavestrough half cleared of wet leaves"><span class="t">Eavestrough cleaning<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a></li>
+      <li class="rise"><a class="card" href="#ask" data-job="Gutter guards" aria-label="Get a quote for gutter guards"><img src="img/guard.webp" srcset="img/guard-400.webp 400w, img/guard.webp 800w" sizes="(min-width:1024px) 270px, 50vw" width="800" height="1000" loading="lazy" decoding="async" alt="Maple leaves resting on a mesh gutter guard"><span class="t">Gutter guards<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a></li>
+      <li class="rise"><a class="card" href="#ask" data-job="Seamless eavestroughs" aria-label="Get a quote for seamless eavestroughs"><img src="img/eaves.webp" srcset="img/eaves-400.webp 400w, img/eaves.webp 800w" sizes="(min-width:1024px) 270px, 50vw" width="800" height="1000" loading="lazy" decoding="async" alt="A white seamless eavestrough and downspout on a brick bungalow"><span class="t">Seamless eavestroughs<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a></li>
+      <li class="rise"><a class="card" href="#ask" data-job="Siding repair" aria-label="Get a quote for siding repair"><img src="img/siding.webp" srcset="img/siding-400.webp 400w, img/siding.webp 800w" sizes="(min-width:1024px) 270px, 50vw" width="800" height="1000" loading="lazy" decoding="async" alt="Grey vinyl siding on the side of a two-storey house"><span class="t">Siding repair<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a></li>
     </ul>
     <a class="fb rise" href="https://www.facebook.com/profile.php?id=61571689577857" rel="noopener">
-      <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>See more of our work on Facebook</span>
+      <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>See our work on Facebook</span>
       <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
     </a>
   </div>
@@ -327,9 +329,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="on-paper ask" id="ask" aria-labelledby="h-ask">
   <div class="wrap">
     <div class="head rise">
-      <span class="eyebrow">Residential and commercial</span>
+      <span class="eyebrow">Windsor and Essex County</span>
       <h2 id="h-ask">Ask for a quote</h2>
-      <p class="lede">Pick the job and add your town. It comes straight to our phone as a text.</p>
+      <p class="lede">Pick the job and add your town.</p>
     </div>
     <form id="quoteForm" class="rise" novalidate>
       <fieldset class="field">
@@ -357,8 +359,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <textarea id="note" name="note" maxlength="600" placeholder="Two-storey house, overflowing at the back corner…"></textarea>
       </div>
       <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to us</button>
-      <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Call us at <a href="tel:+15199961924">(519) 996-1924</a>.</p>
-      <p class="after">Opens your messages with this written out.</p>
+      <p class="sent" id="sent" role="status" hidden>Didn't open your messages? <button type="button" class="copy" id="copyMsg">Copy the message</button> and text it yourself, or call the number below.</p>
+      <p class="after">Opens your messages with this written out. Rather call? <a href="tel:+15199961924">(519) 996-1924</a></p>
     </form>
   </div>
 </section>
@@ -377,7 +379,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <footer>
   <div class="wrap">
-    <span>PL Siding and Eaves · Windsor &amp; Essex County, Ontario · <span class="nw">(519) 996-1924</span></span>
+    <span>PL Siding and Eaves · Windsor &amp; Essex County, Ontario</span>
     <nav aria-label="Contact">
       <a href="mailto:plrs8793@gmail.com">plrs8793@gmail.com</a>
       <a href="https://www.facebook.com/profile.php?id=61571689577857" rel="noopener">Facebook</a>
@@ -391,9 +393,30 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 /* ===== Config ===== */
 var CONFIG = {
   FLOAT: true,             // the floating text circle; false removes it
-  SMS: '+15199961924'      // where the quote form sends its text
+  SMS: '+15199961924',     // where the quote form sends its text
+  TEXTS: true,             // false = the number doesn't take texts: text buttons become call buttons
+  PROMO_END: '2026-11-30'  // fall $50 special hides itself after this day (date to confirm with the owner)
 };
 document.documentElement.classList.add('js');
+
+/* ===== Fall special: hide it (and the hero's offer eyebrow) once it ends ===== */
+(function(){
+  if(!CONFIG.PROMO_END||new Date()<=new Date(CONFIG.PROMO_END+'T23:59:59'))return;
+  var sp=document.getElementById('special');if(sp)sp.hidden=true;
+  var eb=document.getElementById('heroEyebrow');if(eb)eb.textContent='Proudly Canadian';
+})();
+
+/* ===== No texting? The hero's Text us goes and the floating circle calls instead (the form still needs rewording) ===== */
+(function(){
+  if(CONFIG.TEXTS)return;
+  [].forEach.call(document.querySelectorAll('[data-sms]'),function(a){
+    // no Call button under the hero title: the header number already covers calling there
+    if(a.closest('.actions')){a.remove();return}
+    a.href='tel:'+CONFIG.SMS;
+    a.setAttribute('aria-label',(a.getAttribute('aria-label')||'').replace(/^Text/,'Call'));
+    [].forEach.call(a.childNodes,function(n){if(n.nodeType===3&&/Text/.test(n.textContent))n.textContent=n.textContent.replace('Text','Call')});
+  });
+})();
 
 /* ===== Hero H1 bounce-in: split into letters (JS only, so no-JS and reduced motion keep the plain heading) ===== */
 (function(){
@@ -414,9 +437,14 @@ document.documentElement.classList.add('js');
       }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
     });
   }
-  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
-  // once the last letter lands, put the plain heading back so kerning and text selection return
-  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+  function run(){
+    var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
+    // once the last letter lands, put the plain heading back so kerning and text selection return
+    if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+  }
+  // wait (briefly) for Cal Sans so the letters don't reflow mid-bounce on a slow connection
+  var ready=document.fonts&&document.fonts.load?document.fonts.load('1em "Cal Sans"'):Promise.resolve();
+  Promise.race([ready,new Promise(function(r){setTimeout(r,600)})]).then(run,run);
 })();
 
 /* ===== Service cards pre-select the matching job in the form ===== */
@@ -431,7 +459,10 @@ document.documentElement.classList.add('js');
 /* ===== Quote form: composes a text to PL Siding and Eaves ===== */
 (function(){
   var form=document.getElementById('quoteForm');if(!form)return;
+  var last='';
   function val(id){return document.getElementById(id).value.trim()}
+  // clipboard can be blocked in in-app browsers; the call link stays as the sure way
+  document.getElementById('copyMsg').addEventListener('click',function(){var b=this;if(navigator.clipboard)navigator.clipboard.writeText(last).then(function(){b.textContent='Copied'},function(){})});
   function mark(id,bad){var f=document.getElementById(id);f.classList.toggle('bad',bad);f.querySelector('input,textarea').setAttribute('aria-invalid',bad?'true':'false')}
   form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&e.target.value.trim())f.classList.remove('bad')});
   form.addEventListener('submit',function(e){
@@ -440,8 +471,9 @@ document.documentElement.classList.add('js');
     mark('f-name',!name);mark('f-where',!where);
     if(!name){document.getElementById('name').focus();return}
     if(!where){document.getElementById('where').focus();return}
-    var msg='Hi PL Siding and Eaves, this is '+name+'. I\'d like a quote for '+(job&&job.value!=='Something else'?job.value.toLowerCase():'some work')+' in '+where+'.';
+    var msg='Hi PL Siding and Eaves, I found your website. This is '+name+'. I\'d like a quote for '+(job&&job.value!=='Something else'?job.value.toLowerCase():'some work')+' in '+where+'.';
     if(note)msg+=' '+note;
+    last=msg;
     location.href='sms:'+CONFIG.SMS+'?&body='+encodeURIComponent(msg);
     // if no messages app opened (desktop, some in-app browsers), say what to do instead
     setTimeout(function(){document.getElementById('sent').hidden=false},900);
