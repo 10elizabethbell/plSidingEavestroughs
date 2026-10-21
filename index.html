@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PL Siding and Eaves · Eavestrough cleaning, gutter guards and siding · Windsor &amp; Essex County</title>
+<meta name="description" content="Hand-cleaned eavestroughs, flushed downspouts, gutter guards, seamless eavestroughs and siding repair in Windsor, Essex County and surrounding areas. Call (519) 996-1924.">
+<meta name="theme-color" content="#f4f6fb">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PL Siding and Eaves · Get your Windsor home ready for winter">
+<meta property="og:description" content="Eavestrough cleaning, gutter guards, seamless eavestroughs and siding repair in Windsor and Essex County. Call (519) 996-1924.">
+<meta property="og:url" content="https://10elizabethbell.github.io/plSidingEavestroughs/">
+<meta property="og:image" content="https://10elizabethbell.github.io/plSidingEavestroughs/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
+<style>
+/* ---------- Tokens ---------- */
+:root{
+  /* off-white paper, two navies (the logo's black, warmed to navy), one fall-maple amber */
+  --paper:#f4f6fb;       /* page ground */
+  --card:#ffffff;
+  --field:#e6ecf5;       /* inputs and chips on the white form card */
+  --ink:#12253d;         /* headings, text on amber */
+  --body:#2a3a4c;        /* running text on light */
+  --soft:#4a5868;        /* secondary text on light */
+  --navy:#1d3b60;        /* hero, services, close */
+  --deep:#10223a;        /* how it works, footer (line texture) */
+  --on-dark:#f4f7fb;
+  --on-dark-soft:#c9d6e6;
+  --amber:#f2a33a;       /* fills only; text on it is --ink */
+  --amber-2:#f7b95e;
+  --amber-ink:#8a4a00;   /* amber as text on light */
+  --line:rgba(18,37,61,.12);
+  --focus:#1f5fa8;       /* form hover/focus outline, distinct from the amber fill */
+  --error:#b3261e;
+  --texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);
+  --display:"Cal Sans","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --text:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --r-card:24px;--r-field:10px;--pill:999px;
+  --gutter:20px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;font:16px/1.7 var(--text);color:var(--body);background:var(--paper)}
+::selection{background:var(--amber);color:var(--ink)}
+img,svg,canvas{display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.on-navy :focus-visible,.on-deep :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:var(--amber)}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
+h2{font-size:clamp(30px,7.6vw,48px)}
+p{margin:0}
+
+/* ---------- Bands ---------- */
+section{padding:64px 0}
+.on-paper{background:var(--paper)}
+.on-navy{background:var(--navy);color:var(--on-dark-soft)}
+.on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
+.on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
+.accent{color:var(--amber-ink)}
+.on-navy .accent,.on-deep .accent,.hero .accent{color:var(--amber)}
+.head{display:grid;gap:16px;justify-items:start;max-width:640px}
+
+/* Eyebrow: a few key headings only. A label, not a button. */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(18,37,61,.06);padding:9px 14px;border-radius:var(--pill)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--amber)}
+.hero .eyebrow,.on-navy .eyebrow,.on-deep .eyebrow{color:var(--on-dark);background:rgba(255,255,255,.12)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}
+.btn:active{transform:scale(.98)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--amber);color:var(--ink);border-color:var(--amber)}
+.btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)}
+
+/* ---------- Header ---------- */
+.top{background:var(--paper);color:var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
+.brand{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none}
+.brand svg{width:38px;height:31px;flex:none;color:var(--ink)}
+.brand .nm{display:flex;flex-direction:column;line-height:1}
+.brand b{font:400 20px/1 var(--display);letter-spacing:.01em}
+.brand span span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
+.tel svg{width:18px;height:18px;flex:none;color:var(--amber-ink)}
+
+/* ---------- Hero ---------- */
+.hero{padding:0;position:relative;background-color:var(--navy);background-image:var(--texture);color:var(--on-dark);overflow:hidden}
+.hero-copy{position:relative;z-index:1;display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:64px}
+.hero h1{color:#fff;font-size:clamp(42px,12vw,80px);line-height:1.02;max-width:12ch}
+/* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
+.hero h1 .w{display:inline-block;white-space:nowrap}
+.hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
+@keyframes letter-in{to{opacity:1;transform:none}}
+.promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:var(--on-dark-soft);max-width:32ch}
+.actions{display:grid;gap:12px;width:100%;margin-top:4px}
+/* the logo's maple leaf and house, faint, desktop only (kept clear of the copy) */
+.hero-mark{display:none}
+
+/* ---------- Fall cleaning ---------- */
+.claims{list-style:none;margin:28px 0 0;padding:0;display:grid}
+.claims li{display:flex;align-items:center;gap:16px;padding:16px 0;font:400 clamp(20px,5.4vw,24px)/1.15 var(--display);color:var(--ink)}
+.claims li+li{border-top:1px solid var(--line)}
+.claims svg{width:40px;height:40px;flex:none;color:var(--amber-ink)}
+.special{margin-top:32px;background:var(--amber);color:var(--ink);border-radius:var(--r-card);padding:24px;display:grid;gap:8px;max-width:520px}
+.special b{font:400 clamp(24px,6.6vw,30px)/1.1 var(--display)}
+.special p{font-size:17px;line-height:1.5}
+
+/* ---------- Services: photo cards ---------- */
+.cards{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{position:relative;display:block;border-radius:20px;overflow:hidden;aspect-ratio:4/5;background:var(--deep);text-decoration:none;color:#fff}
+.card img{width:100%;height:100%;object-fit:cover}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,22,38,.88) 0,rgba(10,22,38,.55) 32%,rgba(10,22,38,0) 58%)}
+.card .t{position:absolute;z-index:1;left:14px;right:14px;bottom:14px;display:flex;align-items:flex-end;justify-content:space-between;gap:8px;font:400 clamp(17px,4.6vw,22px)/1.1 var(--display)}
+.card .arrow{width:36px;height:36px;background:rgba(255,255,255,.16);color:#fff}
+.card:hover,.card:focus-visible{outline:none}
+.card:focus-visible .arrow{background:var(--amber);color:var(--ink);outline:3px solid var(--amber);outline-offset:3px}
+.also{margin-top:20px;font-size:17px;color:var(--on-dark-soft)}
+.fb{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:72px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--card);color:var(--ink);text-decoration:none;font:400 clamp(18px,5vw,20px)/1.2 var(--display);max-width:460px}
+.fb:hover,.fb:focus-visible{outline:none;background:var(--card);box-shadow:none}
+.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl svg{width:28px;height:28px;flex:none;color:#1877f2}
+.arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(18,37,61,.07);color:var(--ink);transition:background-color .2s,color .2s}
+.arrow svg{width:18px;height:18px}
+.fb:focus-visible .arrow{background:var(--amber);outline:3px solid var(--amber);outline-offset:3px}
+
+/* ---------- How it works ---------- */
+.steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);font:400 20px/1 var(--display)}
+.steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}
+.steps span{display:block;margin-top:4px}
+
+/* ---------- Form ---------- */
+.ask .wrap{display:grid;gap:28px}
+form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px}
+.field{display:grid;gap:8px;min-width:0}
+.field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
+.field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+fieldset legend{margin-bottom:8px}
+input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--focus);transition:border-color .15s}
+textarea{min-height:110px;resize:vertical}
+input::placeholder,textarea::placeholder{color:#55616f}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}
+.chips input:checked+label{background:var(--ink);color:#fff}
+.err{display:none;font-size:15px;color:var(--error)}
+.field.bad .err{display:block}
+.field.bad input[type=text],.field.bad textarea,.field.bad input[type=text]:focus,.field.bad textarea:focus{border-color:var(--error)}
+form .btn-primary{width:100%}
+form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.after{font-size:15px;color:var(--soft)}
+.sent{color:var(--ink);font-weight:600}
+.sent a{white-space:nowrap;display:inline-block;padding:11px 0;margin:-11px 0}
+@media (max-width:380px){.chips label{padding:0 14px}}
+
+/* ---------- Close ---------- */
+.close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft)}
+.bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--on-dark);min-height:56px;white-space:nowrap}
+.bigtel svg{width:.8em;height:.8em;flex:none;color:var(--amber)}
+.area{margin-top:22px;max-width:40ch}
+
+/* ---------- Footer ---------- */
+footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
+footer .wrap{display:grid;gap:14px}
+.nw{white-space:nowrap}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
+
+/* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
+.float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);box-shadow:0 10px 28px rgba(8,22,40,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.float.on{transform:none}
+.float svg{width:26px;height:26px}
+.float:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
+
+/* ---------- Motion: one fade-up, only for things below the first screen ---------- */
+.js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
+.js .rise.below{opacity:0;transform:translateY(12px)}
+
+/* ---------- Desktop ---------- */
+@media (min-width:760px){
+  :root{--gutter:40px}
+  .top .wrap{min-height:76px}
+  .brand svg{width:46px;height:38px}
+  .brand b{font-size:23px}
+  .tel{font-size:20px}
+  section{padding:96px 0}
+  .hero-copy{padding-top:96px;padding-bottom:112px}
+  .promise{max-width:40ch}
+  .actions{grid-auto-flow:column;justify-content:start;width:auto}
+  .actions .btn{min-width:220px}
+  .cards{grid-template-columns:repeat(4,1fr);gap:16px}
+}
+@media (min-width:1024px){
+  .hero-mark{display:block;position:absolute;right:max(40px,calc(50% - 560px));bottom:-40px;width:440px;height:360px;color:rgba(255,255,255,.06)}
+  .split{display:grid;grid-template-columns:1fr 1fr;column-gap:64px;align-items:start}
+  .split .claims{margin-top:0}
+  .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+  .ask .head{position:sticky;top:40px}
+  .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+  .bigtel{margin-top:0}
+  .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  .steps b{font-size:22px}
+}
+/* hover styles only where there is a real pointer, so taps don't leave them stuck on */
+@media (hover:hover){
+.tel:hover{color:var(--amber-ink)}
+.btn-primary:hover{background:var(--amber-2);border-color:var(--amber-2)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.fb:hover .arrow,.card:hover .arrow{background:var(--amber);color:var(--ink)}
+input[type=text]:hover,textarea:hover{border-color:var(--focus)}
+.chips label:hover{border-color:var(--focus)}
+form .btn-primary:hover{outline:2px solid var(--focus);outline-offset:2px}
+.sent a:hover{color:var(--focus)}
+.bigtel:hover{color:var(--amber)}
+footer a:hover{color:var(--amber)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rise,.float,.btn{transition:none}
+  .js .rise.below{opacity:1;transform:none}
+  .hero h1 .c{animation:none;opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: A proudly Canadian eavestrough and siding crew that gets Windsor homes ready for winter, told calmly (after lpmr.co.uk): one claim, what a fall cleaning includes, the four services, and an easy way to ask for a quote.
+OWN-WORLD: Fall in Essex County: the logo's maple leaf over a house. Off-white paper, navy (#1d3b60) and deep navy (#10223a, faint diagonal lines) bands in place of the logo's black, fall-maple amber (#f2a33a) as the one accent (fills only; #8a4a00 when it has to be text on light). Cal Sans display, system body at 16/1.7.
+STORY: The visitor sees who cleans eavestroughs in Windsor before winter, sees the fall special and what a cleaning includes, sees the other services, and texts or calls for a quote.
+FIRST VIEWPORT: Paper header with the maple-and-house mark, wordmark left and tap-to-call number top right. Navy hero with line texture: eyebrow, "Get your Windsor home ready for winter.", one promise line, two pill buttons (Get a quote, Text us).
+FORM: calm band system; no client job photos exist, so the hero is the plain textured navy band and four generated photos illustrate the services only (listed in HANDOFF.md).
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <!-- the PL Siding and Eaves mark, traced from their logo: three maple-leaf points behind a house -->
+  <symbol id="i-logo" viewBox="360 300 1095 900"><path fill="currentColor" fill-rule="evenodd" d="M907 312L998 545 1105 522 1046 882 907 788 768 882 708 522 818 545ZM608 660L603 795 373 740 490 935 412 975 520 1050 752 893ZM1206 660L1211 795 1441 740 1324 935 1402 975 1294 1050 1062 893ZM907 848L1247 1080 1175 1080 1175 1190 640 1190 640 1080 565 1080ZM845 1020h55v50h-55ZM915 1020h55v50h-55ZM845 1090h55v50h-55ZM915 1090h55v50h-55Z"/></symbol>
+</svg>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="PL Siding and Eaves, back to top"><svg aria-hidden="true"><use href="#i-logo"/></svg><span class="nm"><b>PL Siding</b><span>and Eaves</span></span></a>
+    <a class="tel" href="tel:+15199961924"><svg aria-hidden="true"><use href="#i-phone"/></svg>(519) 996-1924</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero" aria-labelledby="h1">
+  <svg class="hero-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+  <div class="wrap hero-copy">
+    <span class="eyebrow">Proudly Canadian</span>
+    <h1 id="h1">Get your Windsor home <span class="accent">ready for winter.</span></h1>
+    <p class="promise">We clean your eavestroughs by hand, and we don't leave until your yard is tidy again.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#ask">Get a quote</a>
+      <a class="btn btn-ghost" data-sms href="sms:+15199961924?&amp;body=Hi%20PL%20Siding%20and%20Eaves%2C%20I%20found%20your%20website.%20I%27d%20like%20a%20quote%20for%3A%20"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text us</a>
+    </div>
+  </div>
+</section>
+
+<section class="on-paper" aria-labelledby="h-fall">
+  <div class="wrap split">
+    <div class="rise">
+      <div class="head">
+        <span class="eyebrow">Fall cleaning</span>
+        <h2 id="h-fall">Every leaf out <span class="accent">before the snow.</span></h2>
+      </div>
+      <div class="special" id="special">
+        <b>Save $50 on fall service packages.</b>
+        <p>Mention this website when you text or call.</p>
+      </div>
+    </div>
+    <ul class="claims">
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 5c7 5 10 11 8 18-1.6 5.5-6 9-8 12-2-3-6.4-6.5-8-12C10 16 13 10 20 5z"/><path d="M20 12v23"/></svg>Every eavestrough cleaned by hand</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h16v8h-8v20H8z"/><path d="M28 22c2 3 4 5.3 4 7.5a4 4 0 0 1-8 0c0-2.2 2-4.5 4-7.5z"/></svg>Downspouts flushed and tested</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="17" cy="17" r="10"/><path d="M24.5 24.5L34 34"/></svg>Eavestroughs inspected</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 35h28"/><path d="M14 35l3-13h6l3 13"/><path d="M20 22V5"/><path d="M11 35l2-4M29 35l-2-4"/></svg>Your yard cleaned up after</li>
+    </ul>
+  </div>
+</section>
+
+<section class="on-navy" id="services" aria-labelledby="h-services">
+  <div class="wrap">
+    <div class="head rise">
+      <span class="eyebrow">Homes and businesses</span>
+      <h2 id="h-services">Siding and eaves, <span class="accent">start to finish.</span></h2>
+    </div>
+    <ul class="cards">
+      <li class="rise"><a class="card" href="#ask" data-job="Eavestrough cleaning"><img src="img/cleaning.webp" width="800" height="1000" loading="lazy" decoding="async" alt="An eavestrough half cleared of wet leaves"><span class="t">Eavestrough cleaning<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a></li>
+      <li class="rise"><a class="card" href="#ask" data-job="Gutter guards"><img src="img/guard.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Maple leaves resting on a mesh gutter guard"><span class="t">Gutter guards<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a></li>
+      <li class="rise"><a class="card" href="#ask" data-job="Seamless eavestroughs"><img src="img/eaves.webp" width="800" height="1000" loading="lazy" decoding="async" alt="A white seamless eavestrough and downspout on a brick bungalow"><span class="t">Seamless eavestroughs<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a></li>
+      <li class="rise"><a class="card" href="#ask" data-job="Siding repair"><img src="img/siding.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Grey vinyl siding on the side of a two-storey house"><span class="t">Siding repair<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></span></a></li>
+    </ul>
+    <a class="fb rise" href="https://www.facebook.com/profile.php?id=61571689577857" rel="noopener">
+      <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>See more of our work on Facebook</span>
+      <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+    </a>
+  </div>
+</section>
+
+<section class="on-deep how" aria-labelledby="h-how">
+  <div class="wrap">
+    <h2 id="h-how" class="rise">How it <span class="accent">works.</span></h2>
+    <ol class="steps">
+      <li class="rise"><div><b>Text or call us.</b><span>Tell us what your eaves or siding need.</span></div></li>
+      <li class="rise"><div><b>Get your price.</b><span>You know the cost before we start.</span></div></li>
+      <li class="rise"><div><b>We do the job and clean up.</b><span>Your yard looks like we were never there.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="on-paper ask" id="ask" aria-labelledby="h-ask">
+  <div class="wrap">
+    <div class="head rise">
+      <span class="eyebrow">Residential and commercial</span>
+      <h2 id="h-ask">Ask for a quote</h2>
+    </div>
+    <form id="quoteForm" class="rise" novalidate>
+      <fieldset class="field">
+        <legend>What do you need?</legend>
+        <div class="chips">
+          <input type="radio" name="job" id="j1" value="Eavestrough cleaning"><label for="j1">Eavestrough cleaning</label>
+          <input type="radio" name="job" id="j2" value="Gutter guards"><label for="j2">Gutter guards</label>
+          <input type="radio" name="job" id="j3" value="Seamless eavestroughs"><label for="j3">Seamless eavestroughs</label>
+          <input type="radio" name="job" id="j4" value="Siding repair"><label for="j4">Siding repair</label>
+          <input type="radio" name="job" id="j5" value="Something else"><label for="j5">Something else</label>
+        </div>
+      </fieldset>
+      <div class="field" id="f-name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
+        <p class="err" id="e-name">Add your name so we know who's texting.</p>
+      </div>
+      <div class="field" id="f-where">
+        <label for="where">Your town or street</label>
+        <input type="text" id="where" name="where" autocomplete="address-level2" maxlength="80" placeholder="e.g. Tecumseh" aria-describedby="e-where">
+        <p class="err" id="e-where">Add your town so we know where the job is.</p>
+      </div>
+      <div class="field">
+        <label for="note">Anything else? <small>(optional)</small></label>
+        <textarea id="note" name="note" maxlength="600" placeholder="Two-storey house, overflowing at the back corner…"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to us</button>
+      <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Call us at <a href="tel:+15199961924">(519) 996-1924</a>.</p>
+      <p class="after">Opens your messages with this written out.</p>
+    </form>
+  </div>
+</section>
+
+<section class="on-navy close" id="close" aria-labelledby="h-close">
+  <div class="wrap">
+    <div class="rise">
+      <h2 id="h-close">PL Siding and Eaves</h2>
+      <p class="who">Proudly Canadian.</p>
+      <p class="area">Serving Windsor, Essex County and the surrounding areas.</p>
+    </div>
+    <a class="bigtel rise" href="tel:+15199961924"><svg aria-hidden="true"><use href="#i-phone"/></svg>(519) 996-1924</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>PL Siding and Eaves · Windsor &amp; Essex County, Ontario · <span class="nw">(519) 996-1924</span></span>
+    <nav aria-label="Contact">
+      <a href="mailto:plrs8793@gmail.com">plrs8793@gmail.com</a>
+      <a href="https://www.facebook.com/profile.php?id=61571689577857" rel="noopener">Facebook</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="float" id="float" data-sms href="sms:+15199961924?&amp;body=Hi%20PL%20Siding%20and%20Eaves%2C%20I%20found%20your%20website.%20I%27d%20like%20a%20quote%20for%3A%20" aria-label="Text PL Siding and Eaves"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
+
+<script>
+/* ===== Config ===== */
+var CONFIG = {
+  FLOAT: true,             // the floating text circle; false removes it
+  SMS: '+15199961924'      // where the quote form sends its text
+};
+document.documentElement.classList.add('js');
+
+/* ===== Hero H1 bounce-in: split into letters (JS only, so no-JS and reduced motion keep the plain heading) ===== */
+(function(){
+  var h=document.getElementById('h1');
+  if(!h||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var plain=h.innerHTML,i=0,last=null;
+  h.setAttribute('aria-label',h.textContent.replace(/\s+/g,' ').trim());
+  function split(node,into){
+    [].slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        n.textContent.split(/(\s+)/).forEach(function(part){
+          if(!part)return;
+          if(/^\s+$/.test(part)){into.appendChild(document.createTextNode(' '));return}
+          var w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');
+          for(var k=0;k<part.length;k++){var c=document.createElement('span');c.className='c';c.style.setProperty('--i',i++);c.textContent=part[k];w.appendChild(c);last=c}
+          into.appendChild(w);
+        });
+      }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
+    });
+  }
+  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
+  // once the last letter lands, put the plain heading back so kerning and text selection return
+  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+})();
+
+/* ===== Service cards pre-select the matching job in the form ===== */
+(function(){
+  [].forEach.call(document.querySelectorAll('[data-job]'),function(a){
+    a.addEventListener('click',function(){
+      var r=document.querySelector('input[name=job][value="'+a.getAttribute('data-job')+'"]');if(r)r.checked=true;
+    });
+  });
+})();
+
+/* ===== Quote form: composes a text to PL Siding and Eaves ===== */
+(function(){
+  var form=document.getElementById('quoteForm');if(!form)return;
+  function val(id){return document.getElementById(id).value.trim()}
+  function mark(id,bad){var f=document.getElementById(id);f.classList.toggle('bad',bad);f.querySelector('input,textarea').setAttribute('aria-invalid',bad?'true':'false')}
+  form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&e.target.value.trim())f.classList.remove('bad')});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=val('name'),where=val('where'),note=val('note'),job=form.querySelector('input[name=job]:checked');
+    mark('f-name',!name);mark('f-where',!where);
+    if(!name){document.getElementById('name').focus();return}
+    if(!where){document.getElementById('where').focus();return}
+    var msg='Hi PL Siding and Eaves, this is '+name+'. I\'d like a quote for '+(job&&job.value!=='Something else'?job.value.toLowerCase():'some work')+' in '+where+'.';
+    if(note)msg+=' '+note;
+    location.href='sms:'+CONFIG.SMS+'?&body='+encodeURIComponent(msg);
+    // if no messages app opened (desktop, some in-app browsers), say what to do instead
+    setTimeout(function(){document.getElementById('sent').hidden=false},900);
+  });
+})();
+
+/* ===== Floating text circle: shows after the hero, hides while the form is on screen ===== */
+(function(){
+  var fl=document.getElementById('float');if(!fl)return;
+  if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
+  var pastHero=false,formIn=false;
+  function sync(){var on=pastHero&&!formIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
+  new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('quoteForm'));
+  sync();
+})();
+
+/* ===== Fade-up: everything is visible at rest; only what starts below the first screen rises 12px in ===== */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('below');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('below');io.observe(el)}});
+})();
+</script>
+</body>
+</html>
